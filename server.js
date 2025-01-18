@@ -20,6 +20,11 @@ app.use(express.json());
 app.use('/api/room', roomRoutes);
 app.use('/api/game', gameRoutes);
 
+app.get('/api/test', (req, res) => {
+
+    res.send('Hello World');
+
+});
 // Initialize Socket.IO
 init(server);
 
